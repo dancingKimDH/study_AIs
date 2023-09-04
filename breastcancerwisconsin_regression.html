@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>Breast Cancer Prediction</h1>
+
+        <!-- Form -->
+        <form id="predictionForm" class="mt-4">
+            <!-- Texture Mean Input -->
+            <div class="mb-3">
+                <label for="textureMeanInput" class="form-label">Texture Mean:</label>
+                <input type="text" class="form-control" id="textureMeanInput" name="texture_mean" required>
+            </div>
+            <!-- Perimeter Mean Input -->
+            <div class="mb-3">
+                <label for="perimeterMeanInput" class="form-label">Perimeter Mean:</label>
+                <input type="text" class="form-control" id="perimeterMeanInput" name="perimeter_mean" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+
+        <!-- Result Display -->
+        <div id="resultDisplay" class="mt-4"></div>
+
+    </div>
+</body>
+
+</html>
